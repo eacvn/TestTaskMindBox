@@ -1,3 +1,3 @@
-SELECT p.Name, c.Name FROM 
-	Product p LEFT OUTER JOIN ProductCategory rpc ON rpc.ProductId = p.Id
-	LEFT OUTER JOIN Category c ON c.Id = rpc.CategoryId
+SELECT a.Subject, t.Name FROM 
+	Articles a LEFT OUTER JOIN Article_Tag at ON at.ArticleId = a.Id
+	LEFT OUTER JOIN Tags t ON t.Id = at.TagId

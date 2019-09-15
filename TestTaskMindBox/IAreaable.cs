@@ -1,7 +1,7 @@
 ﻿namespace Geometry
 {
     /// <summary>
-    /// for calculating area
+    /// For calculating area. (Вычисление площади фигуры без знания типа фигуры).
     /// </summary>
     public interface IAreaable
     {

@@ -11,13 +11,13 @@ namespace Geometry
         public Triangle(double a, double b, double c)
         {
             if (a <= 0)
-                throw new ArgumentException("a");
+                throw new ArgumentException(nameof(a));
             if (b <= 0)
-                throw new ArgumentException("b");
+                throw new ArgumentException(nameof(b));
             if (c <= 0)
-                throw new ArgumentException("c");
+                throw new ArgumentException(nameof(c));
 
-            if (a + b < c || a + c < b || b + c < a)
+            if (a + b <= c || a + c <= b || b + c <= a)
                 throw new ArgumentException("It is not Triangle");
 
 

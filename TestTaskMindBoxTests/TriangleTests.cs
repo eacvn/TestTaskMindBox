@@ -11,7 +11,6 @@ namespace Geometry.Tests
         {
             Assert.ThrowsException<ArgumentException>(() => new Triangle(-1, 1, 1));
             Assert.ThrowsException<ArgumentException>(() => new Triangle(10, 1.99999999999, 12.0));
-
         }
 
         [TestMethod()]
@@ -25,7 +24,6 @@ namespace Geometry.Tests
         {
             Assert.IsTrue(new Triangle(3, 4, 5).IsRightTriangle());
             Assert.IsFalse(new Triangle(3, 4, 4).IsRightTriangle());
-
         }
     }
 }
